@@ -10,30 +10,30 @@
 <body>
     <div class="container">
         <h1>Sign Up</h1>
-            <form id="form" novalidate>
+            <form id="form">
                 <div class="form-group">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" placeholder="Type Your Full Name Here" required minlength="4" maxlength="20">
+                    <input type="text" id="name" placeholder="Type Your Full Name Here" name="name" minlength="4" maxlength="20">
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="Type Your Phone Here" required pattern="[0-9]{10}">
+                    <input type="tel" id="phone" placeholder="Type Your Phone Here" name="phone" pattern="[0-9]{10}">
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Type Your Email Here" required>
+                    <input type="email" id="email" placeholder="Type Your Email Here" required name="email">
                 </div>
                 <div class="form-group">
                     <label for="website">Website URL</label>
-                    <input type="url" id="website" placeholder="Type Your website Here" required>
+                    <input type="url" id="website" placeholder="Type Your website Here" required name="website">
                 </div>
                 <div class="form-group">
                     <label for="password1">Password</label>
-                    <input type="password" id="Password1" placeholder="Type Your Password Here (Min. 8 characters)" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Please Include at least one uppercase character, 1 lowercase and 1 speacial character"> 
+                    <input type="password" id="password1" placeholder="Type Your Password Here (Min. 8 characters)" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Please Include at least one uppercase character, 1 lowercase and 1 speacial character"> 
                 </div>
                 <div class="form-group">
                     <label for="password2">Confirm Password</label>
-                    <input type="password" id="Password2" placeholder="Confirm Your Password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                    <input type="password" id="password2" placeholder="Confirm Your Password" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
                 </div>
                 <button type="submit"> Register </button>
             </form>
